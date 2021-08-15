@@ -54,10 +54,22 @@ let newArr2= mArr3.map((item,pos)=>{
 
     // Arry Function: reduce()
 
-const numArr = [1,2,3,4,5];
+const numArr = [1,2,3,4,5,6,7];
 
 const result = mArr3.reduce((acc, item)=>{
     return acc+ item.experience;
 },0);
 console.log(result);
 
+
+    // Arry Function: filter()
+
+    const newResult= numArr.filter(item =>{
+        return item % 2==0;
+    });
+    console.log('Result is =>',newResult);
+
+    const newResult2= mArr3.filter(item=>{
+        return item.experience>10;
+    });
+    console.log('Result Arr =>',newResult2);
