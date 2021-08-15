@@ -17,5 +17,47 @@ let mArr1 = [1,2,3,4,5];
 let mArr2=[...mArr1];
 mArr1.push(6);
 
+//console.log(mArr1);
+//console.log(mArr2);
+
+// Arry Function: map()
+
+let newArr = mArr1.map((item, pos) =>{
+    console.log(item);
+    console.log(`Item at pos : ${pos} is ${item*2}`);
+});
 console.log(mArr1);
-console.log(mArr2);
+console.log(newArr);
+
+const mArr3=[
+    {
+        name:'John Lark',
+        experience : 10,
+        type:'commercial'
+    },
+    {
+        name:'John Deo',
+        experience: 5,
+        type:'commercial'
+    },
+    {
+        name:'John Smith',
+        experience: 20,
+        type:'commercial'
+    }
+];
+
+let newArr2= mArr3.map((item,pos)=>{
+    console.log(item);
+})
+
+
+    // Arry Function: reduce()
+
+const numArr = [1,2,3,4,5];
+
+const result = mArr3.reduce((acc, item)=>{
+    return acc+ item.experience;
+},0);
+console.log(result);
+
